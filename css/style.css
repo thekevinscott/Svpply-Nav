@@ -1,0 +1,356 @@
+/*
+Theme Name: Herding Pixels
+Theme URI:
+Author: Kevin Scott
+Description: Built off of Troller, purchased from ThemeForest
+*/
+
+@charset "utf-8";
+/* CSS Document */
+body, html {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+	font-weight: lighter;
+}
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	overflow-x: hidden;
+	background-image: url(images/bg/sidebar.png);
+}
+.c, .clear {
+	clear: both;
+}
+.left { float: left;}
+.right { float: right;}
+a {
+
+	color: #e34e37;
+	text-decoration: none;
+	font-weight: 700;
+}
+p {
+
+	color: #7D7D7D;
+	color: inherit;
+	margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+
+	font-family: "Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	margin: 0 0 40px 0;
+
+}
+
+.header {
+	position: relative;
+	z-index: 700;
+	height: 50px;
+	background-image: url(images/bg/header.png);
+	background-repeat: repeat-x;
+	display: block;
+}
+
+.header-icon {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: solid 1px #000000;
+	width: 36px;
+	height: 26px;
+	display: inline-block;
+	background-color: #303030;
+}
+.header-icon-active {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: solid 1px #000000;
+	width: 36px;
+	height: 26px;
+	display: inline-block;
+	background-color: #4e4e4e;
+}
+.nav-button {
+	background-image: url(images/nav/menu.png);
+	background-repeat: no-repeat;
+	background-position: 9px 8px;
+	float: left;
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-right: -45px;
+}
+.hide-nav {
+	display: none;
+	background-image: url(images/nav/menu.png);
+	background-repeat: no-repeat;
+	background-position: 9px 8px;
+	float: left;
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-right: -45px;
+}
+.contact-icon {
+	display: none;
+	position: absolute;
+	width: 38px;
+	height: 28px;
+	top: 8px;
+	right: 10px;
+	background-image: url(images/nav/mail.png);
+	background-repeat: no-repeat;
+	background-position: 9px 8px;
+}
+.body {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	box-shadow: 0 0 8px #000;
+	display: block;
+	z-index: 999;
+	height: auto;
+	right: 0px;
+	background: #EEE;
+	color: #666666;
+
+}
+.body .header {
+	height: 46px;
+}
+
+
+
+
+
+
+
+/*Sidebar*/
+
+.stop-body-scroll {
+	z-index: 1200;
+	background-color: rgba(0,0,0,0.3);
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.sidebar-hide-scroll {
+
+	/*width: 200px;*/
+	width: 100%;
+	overflow: scroll!important;
+	overflow-x: hidden!important;
+	-webkit-overflow-scroll: touch!important;
+
+	height: 100% !important;
+}
+.sidebar-hide-scroll ul {
+	height: 0;
+}
+.sidebar {
+	font-family: Lato;
+	background: #262626 url(images/bg/sidebar.png);
+	position: fixed;
+	overflow: hidden;
+	z-index: 99;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+
+}
+.sidebar-header {
+	background-image: url(images/bg/header.png);
+	background-repeat: repeat-x;
+	height: 50px;
+	width: 180px;
+}
+.sidebar-title {
+	background-image: url(images/icons/location.png);
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 12px;
+	color: #FFFFFF;
+	text-shadow: 0px 2px 0px rgba(0,0,0,0.4);
+	text-transform: uppercase;
+	font-size: 16px;
+	height: 20px;
+	display: block;
+}
+.no-top {
+	border-top: none!important;
+}
+.sidebar-divider {
+	border-top: solid 1px #585757;
+	border-bottom: solid 1px #585757;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #585757;
+	font-size: 10px;
+	text-align: right;
+	padding-right: 30px;
+
+	font-weight: 900;
+	text-transform: uppercase;
+	width: 150px;
+	margin-bottom: 10px;
+}
+.mainMenuWrap {
+	display: block;
+	overflow: hidden;
+	list-style: none;
+	padding: 0px;
+	width: 180px;
+	width: 100%;
+	z-index: 150;
+	position: absolute;
+	height: 100%;
+}
+.navmenu li {
+	display: block;
+	line-height: 20px;
+	position: absolute;
+	width: 100%;
+}
+
+.navmenu li a {
+	display: block;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+
+	font-weight: 600;
+	color: #f6f6f6;
+	text-decoration: none;
+	padding-left: 40px;
+	letter-spacing: 0.9px;
+}
+.submenu {
+
+	list-style: none;
+	padding: 0px;
+	position: absolute;
+
+	top: 0;
+	width: 100%;
+	z-index: 99;
+
+}
+
+.submenu > li > a{
+	height: 100%;
+	line-height: inherit;
+
+}
+.submenu > li > a.selected {
+	font-weight: bold;
+	color: white;
+
+	-webkit-transition: 		all 0.35s ease-in-out;
+  	-moz-transition: 			all 0.35s ease-in-out;
+  	transition: 				all 0.35s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submenu a {
+	margin-top: 0;
+	position: relative;
+
+	height: 54px;
+	overflow: hidden;
+	line-height: 54px;
+	padding-left: 20px;
+	margin: 0;
+	font-size: 16px;
+	display: block;
+}
+
+.category a {
+	z-index: 101;
+}
+
+#category-all {
+
+	top: 0;
+}
+#category-all > a {
+	color: #808080;
+}
+
+
+
+
+
+@media all and (max-width: 1234px) {
+
+	.container .post {
+
+		margin: 0 10%;
+
+	}
+
+}
+@media all and (max-width: 824px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	.container {
+		min-width: 400px;
+	}
+
+}
+@media all and (max-width: 624px) {
+	.container {
+		min-width: 200px;
+	}
+	h1 {
+		font-size: 2em;
+	}
+}
+
+
+
+
+
+@media all and (max-width: 624px) {
+	.container .post {
+		margin: 0;
+		padding: 10px;
+	}
+	.header-wrap {
+		padding: 0;
+		height: auto;
+		margin: 10px 0 30px 0;
+	}
+}
+
+html .sidebar #scrollMe .submenu .menuitem a.selected {
+	color: white !important;
+}
+#inner-container {
+	padding: 40px;
+}
